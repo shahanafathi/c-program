@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+    double p,r,t,a,ci,n,rate;
+    printf("enter your amount : ");
+    scanf("%lf",&p);
+    printf("enter  rate : ");
+    scanf("%lf",&r);
+    printf("enter the time : ");
+    scanf("%lf",&t);
+    printf("enter the n : ");
+    scanf("%lf",&n);
+    ci = p * pow(1 + r / 100, t) - p;
+
+    printf("the CI is %lf",ci);
+    return 0;
+ }
