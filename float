@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main()
+{
+    float a,b,prd;
+    printf("enter the number : ");
+    scanf("%f%f",&a,&b);
+    prd=a*b;
+    printf("the prd is %f",prd);
+    return 0;
+}
