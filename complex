@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main()
+{
+    float r1, r2, img1, img2;
+    float s1, s2;
+    char sgn1, sgn2;
+    printf("enter the real and img 1: ");
+    scanf("%f%f %c", &r1, &img1, &sgn1);
+    printf("enter the real and img 2: ");
+    scanf("%f%f %c", &r2, &img2, &sgn2); 
+    s1 = r1 + r2;
+    s2 = img1 + img2;
+    printf("Sum = %.2f + %.2f%c\n", s1, s2, sgn1); 
+    return 0;
+}
