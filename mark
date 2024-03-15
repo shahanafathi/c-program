@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main ()
+{
+  int mark;
+  printf ("enter your mark : ");
+  scanf ("%d", &mark);
+  if (mark > 85 && mark <= 100)
+    {
+      printf (" Your mark is : A");
+    }
+  else if (mark > 65 && mark <= 84)
+    {
+      printf ("Your mark is : B");
+    }
+  else if (mark > 55 && mark <= 69)
+    {
+      printf ("Your mark is : C");
+    }
+  else if (mark > 45 && mark <= 59)
+    {
+        printf("Your mark is : D");
+    }
+  else
+  {
+      printf("You are Fail");
+  }
+ return 0;
+}
