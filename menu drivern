@@ -1,0 +1,47 @@
+#include <stdio.h>
+
+int main()
+{
+    int n1,n2,choice;
+    char contnu;
+    
+        printf("enter the value 1: ");
+        scanf("%d",&n1);
+        printf("enter the value 2: ");
+        scanf("%d",&n2);
+    do{    
+        printf("Press 1 to add %d and %d \n",n1, n2);
+        printf("Press 2 to sub %d and %d \n",n1, n2);
+        printf("Press 3 to multy %d and %d \n",n1, n2);
+        printf("Press 4 to div %d and %d \n",n1, n2);
+        
+        printf("enter the choice : ");
+        scanf("%d",&choice);
+    switch(choice)
+    {
+        
+        case 1:
+            printf("addition : %d \n", n1 + n2);
+                break;
+        case 2:
+            printf("subtration : %d \n", n1 - n2);
+                break;
+        case 3:
+            printf("multiplication : %d \n", n1 * n2);
+                break;
+        case 4:
+            
+                printf("division : %d \n", n1 / n2);
+                break;
+           
+        default:
+            printf("Invalid Choice");
+                break;
+    }
+        printf("Do you want to continue(y/n)");
+        scanf(" %c",&contnu);
+    }
+    while((contnu=='Y')||(contnu=='y'));
+    
+    return 0;
+}
